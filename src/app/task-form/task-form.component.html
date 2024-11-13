@@ -1,10 +1,12 @@
-<h2>Create New Task</h2>
-<form (ngSubmit)="onSubmit()">
-  <label for="name">Name:</label>
-  <input type="text" id="name" [(ngModel)]="task.name" name="name" required>
+<div class="container">
+  <h2>Create New Task</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="task.name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="task.email" name="email" required>
   
-  <label for="email">Email:</label>
-  <input type="email" id="email" [(ngModel)]="task.email" name="email" required>
-
-  <button type="submit">Add Task</button>
-</form>
+    <button type="submit" class="btn btn-primary">Add Task</button>
+  </form>
+</div>

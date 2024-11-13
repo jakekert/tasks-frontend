@@ -1,11 +1,13 @@
-<h2>Task List</h2>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
-  <tr *ngFor="let task of tasks">
-    <td>{{ task.name }}</td>
-    <td>{{ task.email }}</td>
-  </tr>
-</table>
+<div class="container">
+  <h2>Task List</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.name }}</td>
+      <td>{{ task.email }}</td>
+    </tr>
+  </table>
+</div>
