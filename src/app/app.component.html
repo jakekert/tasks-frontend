@@ -1,8 +1,12 @@
 <div class="container">
-    <h1 class="item">Task App</h1>
-</div>
-<div class="body-container">
-    <app-task-form (taskAdded)="onTaskUpdate($event)" class="item"></app-task-form>
-    <app-task-list class="item"></app-task-list>
-    <app-delete-button (tasksDeleted)="onTaskUpdate()" class="item"></app-delete-button>
+    <h1>TASK APP</h1>
+    <div class="body-container">
+        <div class="task-form">
+            <app-task-form (taskAdded)="onTaskUpdate($event)"></app-task-form>
+        </div>
+        <div class="task-list">
+            <app-task-list ></app-task-list>
+            <app-delete-button (tasksDeleted)="onTaskUpdate()"></app-delete-button>
+        </div>
+    </div>
 </div>

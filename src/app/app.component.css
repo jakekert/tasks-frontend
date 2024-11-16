@@ -1,8 +1,35 @@
 .container {
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: solid;
+    height: 85vh; /* 75% of the viewport height */
+    margin-top: auto; /* Ensures it moves downward in the viewport */
 }
 
-.item {
+.body-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.task-form {
+    display: flex;
+    border: solid;
+    height: 75vh; /* 75% of the viewport height */
+    margin-top: auto; /* Ensures it moves downward in the viewport */
+}
+
+.task-list {
+    display: flex;
+    border: solid;
+    flex-grow: 2;
+    height: 75vh; /* 75% of the viewport height */
+    margin-top: auto; /* Ensures it moves downward in the viewport */
+}
+
+.card {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
