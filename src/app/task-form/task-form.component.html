@@ -2,12 +2,12 @@
   <h2>Create New</h2>
   <form (ngSubmit)="onSubmit()">
     <div>
-      <label for="name">Task:</label>
-      <input type="text" id="name" [(ngModel)]="task.name" name="name" required>
+      <label for="task">Task:</label>
+      <input type="text" id="task" [(ngModel)]="task.task" name="task" required>
     </div>
     <div>
-      <label for="email">Description:</label>
-      <input type="email" id="email" [(ngModel)]="task.email" name="email" required>
+      <label for="description">Description:</label>
+      <input type="description" id="description" [(ngModel)]="task.description" name="description" required>
     </div>
     <div>
       <button type="submit" class="btn btn-primary">Add Task</button>

@@ -9,8 +9,8 @@ import { Task } from '../task.model';
 })
 export class TaskFormComponent {
   task: Task = {
-    name: '',
-    email: ''
+    task: '',
+    description: ''
   };
 
   @Output() taskAdded = new EventEmitter<Task>();  // Create an EventEmitter
@@ -21,7 +21,7 @@ export class TaskFormComponent {
     this.taskService.addTask(this.task).subscribe(result => {
       console.log('Task created', result);
       this.taskAdded.emit(result);  // Emit the new task to the parent
-      this.task = { name: '', email: '' };  // Reset the form
+      this.task = { task: '', description: '' };  // Reset the form
     });
   }
 }

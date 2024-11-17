@@ -28,7 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## What does this do
-I used chat gpt to generate this so I could see what actually goes into linking an angular ui to a back end.
-You can run the back end with intelliJ, open chatgeepeetea or whatever.
-
-In a terminal run mongosh then show dbs, use testdb with the collection tasks
+App for tasks. Have you ever done a task!
